@@ -30,13 +30,13 @@ public class Student_Service_impl implements Student_Service {
 
     @Override
     public boolean saveStudent(Student student) throws Exception {
-        return studentDAO.save(new lk.ijse.prabhash.entity.Student(student.getStudent_id(),student.getName(),student.getAddress(),student.getContact_no(),student.getDob(),student.getGender()));
+        return studentDAO.save(new lk.ijse.prabhash.entity.Student(student.getStudent_id(),student.getName(),student.getAddress(),student.getContact_no(),student.getGender()));
     }
 
 
     @Override
     public boolean updateStudent(Student student) throws Exception {
-        return studentDAO.update(new lk.ijse.prabhash.entity.Student(student.getStudent_id(),student.getName(),student.getAddress(),student.getContact_no(),student.getDob(),student.getGender()));
+        return studentDAO.update(new lk.ijse.prabhash.entity.Student(student.getStudent_id(),student.getName(),student.getAddress(),student.getContact_no(),student.getGender()));
 
     }
 

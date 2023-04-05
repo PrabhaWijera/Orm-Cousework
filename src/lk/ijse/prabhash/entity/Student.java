@@ -15,22 +15,30 @@ import java.util.List;
 @NoArgsConstructor
 @Cacheable
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-@Entity
+@Entity(name = "Student")
 public class Student {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String student_id;
+    @Column
     private String name;
+    @Column
     private String address;
+    @Column
     private String contact_no;
-    private LocalDate dob;
+
+    @Column
     private String gender;
 
-    public Student(String student_id, String name, String address, String contact_no, LocalDate dob, String gender) {
+
+
+
+    public Student(String student_id, String name, String address, String contact_no,  String gender) {
         this.student_id = student_id;
         this.name = name;
         this.address = address;
         this.contact_no = contact_no;
-        this.dob = dob;
+
         this.gender = gender;
     }
 
