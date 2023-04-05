@@ -129,8 +129,8 @@ public class StudentManagementFormController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
+
 
     public void btnSaveOnAction(ActionEvent actionEvent) {
        String student_id=txtStudentId.getText();
@@ -160,6 +160,7 @@ public class StudentManagementFormController {
 
     }
 
+
     public void btnDeleteOnAction(ActionEvent actionEvent)  {
         String student_id=txtStudentId.getText();
         String name=txtName.getText();
@@ -183,6 +184,7 @@ public class StudentManagementFormController {
             throw new RuntimeException(e);
         }
     }
+
     @SneakyThrows
     public void btnUpdateOnAction(ActionEvent actionEvent) throws IOException {
         String student_id=txtStudentId.getText();

@@ -30,6 +30,7 @@ public class Student_Service_impl implements Student_Service {
 
     @Override
     public boolean saveStudent(Student student) throws Exception {
+        System.out.println("servicde");
         return studentDAO.save(new lk.ijse.prabhash.entity.Student(student.getStudent_id(),student.getName(),student.getAddress(),student.getContact_no(),student.getGender()));
     }
 
