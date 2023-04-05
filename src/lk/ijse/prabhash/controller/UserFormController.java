@@ -240,16 +240,5 @@ public class UserFormController {
 
     }
 
-    public void textFields_Key_Released(KeyEvent keyEvent) {
-        ValidationUtil.validate(map,btnSave);
 
-        if (keyEvent.getCode() == KeyCode.ENTER) {
-            Object response =  ValidationUtil.validate(map,btnSave);;
-
-            if (response instanceof TextField) {
-                TextField textField = (TextField) response;
-                textField.requestFocus();
-            }
-        }
-    }
 }
